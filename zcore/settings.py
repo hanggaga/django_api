@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     # Django OAuth Toolkit
     'oauth2_provider',
     'rest_framework',
-    'polls'
 ]
 
 MIDDLEWARE = [
@@ -76,15 +75,8 @@ WSGI_APPLICATION = 'zcore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hmc_hug',
-        'USER': 'hmc_hug_admin',
-        'PASSWORD': '()*@)(!#JK^&*Hucm@cA2020!)($=c',
-        'HOST': 'smartdoc.mysql.singapore.rds.aliyuncs.com',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -106,6 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGIN_URL = '/admin/'
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
