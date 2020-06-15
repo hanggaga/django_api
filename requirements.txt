@@ -1,0 +1,4 @@
+Django
+django-oauth-toolkit
+djangorestframework
+PyMySQL
