@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     # Django OAuth Toolkit
     'oauth2_provider',
     'rest_framework',
+    'polls'
 ]
 
 MIDDLEWARE = [
