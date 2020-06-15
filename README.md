@@ -16,7 +16,7 @@ $ pip install -r requirements.txt
 $ python manage.py migrate
 $ python manage.py runserver
 ```
-### Creating an admin superuser
+### Creating an admin user
 ```
 $ python manage.py createsuperuser
 ```
